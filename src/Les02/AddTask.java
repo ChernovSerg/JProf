@@ -16,11 +16,11 @@ public class AddTask {
         System.out.println("Вводите строки. Для выхода введите 'END'.");
         String tmp;
         do {
-            tmp = reader.next().toUpperCase();
+            tmp = reader.next();
             if (!tmp.equals("END")) {
                 stringList.add(tmp);
             }
-        } while (!tmp.equals("END"));
+        } while (!tmp.equalsIgnoreCase("end"));
         System.out.println(stringList.toString());
     }
 
