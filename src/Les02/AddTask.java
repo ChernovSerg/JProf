@@ -17,7 +17,7 @@ public class AddTask {
         String tmp;
         do {
             tmp = reader.next();
-            if (!tmp.equals("END")) {
+            if (!tmp.equalsIgnoreCase("end")) {
                 stringList.add(tmp);
             }
         } while (!tmp.equalsIgnoreCase("end"));
