@@ -29,9 +29,9 @@ public class FamilySearch {
         try {
             System.out.println("Введите 3 пары значений через дефис: Город - Фамилия семьи");
             String[] pair;
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 1; i++) {
                 String str = reader.nextLine();
-                pair = str.split("-");
+                pair = str.split("\\s*\\-\\s*");
                 families.put(pair[0].trim(), pair[1].trim());
             }
 
