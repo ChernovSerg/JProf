@@ -123,10 +123,6 @@ class MyHashTable {
             this.field = field;
         }
 
-        private boolean add(int key, String field) {
-            return true;
-        }
-
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
