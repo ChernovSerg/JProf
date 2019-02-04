@@ -15,8 +15,9 @@ public class TestDataOutputStreamInputStream {
     public static void main(String[] args) throws IOException {
 
         Random random = new Random();
-        File f = new File("file.txt");
-        File fileSort = new File("file_sort.txt");
+        String dir = ".\\src\\Les04\\";
+        File f = new File(dir+"file.txt");
+        File fileSort = new File(dir+"file_sort.txt");
 
         try (DataOutputStream writer = new DataOutputStream(new FileOutputStream(f))) {
             for (int i = 0; i < 5; i++) {
